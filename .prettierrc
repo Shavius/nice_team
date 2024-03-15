@@ -1,0 +1,15 @@
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"printWidth": 120,
+	"endOfLine": "lf",
+	"overrides": [
+		{
+			"files": "*.md",
+			"options": { "tabWidth": 2 }
+		}
+	]
+}

@@ -1,0 +1,24 @@
+name: Linter-Test-Build
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    LinterTestBuild:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: install packages
+              run: npm i
+
+            - name: start linter
+              run: npm run all
+
+            - name: start test
+              run: npm run test-c
+
+            - name: start build
+              run: npm run build

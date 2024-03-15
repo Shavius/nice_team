@@ -1,13 +1,13 @@
 module.exports = {
 	env: {
 		browser: true,
-		es2021: true,
+		es2022: true,
 		jest: true,
 	},
 	extends: ["standard-with-typescript", "airbnb-base", "plugin:import/typescript", "plugin:prettier/recommended"],
 	overrides: [],
 	parserOptions: {
-		ecmaVersion: "latest",
+		ecmaVersion: 2022,
 		sourceType: "module",
 		project: "./tsconfig.json",
 	},
